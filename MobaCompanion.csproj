@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>MobaCompanion</RootNamespace>
+    <AssemblyName>MobaCompanion</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <StartupObject>MobaCompanion.Program</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <!-- Переиспользуем исходники игр из основного проекта без копирования -->
+  <ItemGroup>
+    <Compile Include="..\ai-console-agent\Game\Net.cs" Link="Game\Net.cs" />
+    <Compile Include="..\ai-console-agent\Game\Lobby.cs" Link="Game\Lobby.cs" />
+    <Compile Include="..\ai-console-agent\Game\MobaGame.cs" Link="Game\MobaGame.cs" />
+    <Compile Include="..\ai-console-agent\Game\DungeonMaster.cs" Link="Game\DungeonMaster.cs" />
+    <Compile Include="..\ai-console-agent\Game\Dnd.cs" Link="Game\Dnd.cs" />
+    <Compile Include="..\ai-console-agent\Game\DndPlusModels.cs" Link="Game\DndPlusModels.cs" />
+    <Compile Include="..\ai-console-agent\Game\DndPlusMeta.cs" Link="Game\DndPlusMeta.cs" />
+    <Compile Include="..\ai-console-agent\Game\DndView.Plus.cs" Link="Game\DndView.Plus.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimPlayerData.cs" Link="Game\DaySimPlayerData.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimMapGen.cs" Link="Game\DaySimMapGen.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimModels.cs" Link="Game\DaySimModels.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimBoard.cs" Link="Game\DaySimBoard.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimMotivator.cs" Link="Game\DaySimMotivator.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimOfficeReactor.cs" Link="Game\DaySimOfficeReactor.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimChillZone.cs" Link="Game\DaySimChillZone.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimGoals.cs" Link="Game\DaySimGoals.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimTray.cs" Link="Game\DaySimTray.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimGame.cs" Link="Game\DaySimGame.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
