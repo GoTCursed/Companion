@@ -35,6 +35,7 @@
     <Compile Include="..\ai-console-agent\Game\DaySimMapGen.cs" Link="Game\DaySimMapGen.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimModels.cs" Link="Game\DaySimModels.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimBoard.cs" Link="Game\DaySimBoard.cs" />
+    <Compile Include="..\ai-console-agent\Game\DaySimFx.cs" Link="Game\DaySimFx.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimMotivator.cs" Link="Game\DaySimMotivator.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimOfficeReactor.cs" Link="Game\DaySimOfficeReactor.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimChillZone.cs" Link="Game\DaySimChillZone.cs" />
