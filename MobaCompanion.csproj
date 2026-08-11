@@ -42,6 +42,14 @@
     <Compile Include="..\ai-console-agent\Game\DaySimGoals.cs" Link="Game\DaySimGoals.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimTray.cs" Link="Game\DaySimTray.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimGame.cs" Link="Game\DaySimGame.cs" />
+    <Compile Include="..\ai-console-agent\Game\ClickRivalCore.cs" Link="Game\ClickRivalCore.cs" />
+    <Compile Include="..\ai-console-agent\Game\ClickRivalDto.cs" Link="Game\ClickRivalDto.cs" />
+    <Compile Include="..\ai-console-agent\Game\ClickRivalHost.cs" Link="Game\ClickRivalHost.cs" />
+    <Compile Include="..\ai-console-agent\Game\ClickRivalClientWindow.xaml.cs" Link="Game\ClickRivalClientWindow.xaml.cs" />
+    <Page Include="..\ai-console-agent\Game\ClickRivalClientWindow.xaml" Link="Game\ClickRivalClientWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>

@@ -69,7 +69,7 @@ internal static class Program
         {
             Title = "Игровой компаньон — выбор игры",
             Width = 480,
-            Height = 440,
+            Height = 500,
             ResizeMode = ResizeMode.CanMinimize,
             WindowStartupLocation = WindowStartupLocation.CenterScreen,
             Background = new SolidColorBrush(Color.FromRgb(12, 12, 16)),
@@ -115,6 +115,12 @@ internal static class Program
         panel.Children.Add(MenuButton("💼  Офисный спринт (1 раб. день)", () =>
         {
             new AiConsole.Game.DaySimWindow { Title = "Офисный спринт — компаньон" }.Show();
+            chooser.Close();
+        }));
+
+        panel.Children.Add(MenuButton("🏗  Тендер — автокликер", () =>
+        {
+            new AiConsole.Game.ClickRivalClientWindow { Title = "Тендер — компаньон" }.Show();
             chooser.Close();
         }));
 
