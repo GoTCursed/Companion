@@ -41,6 +41,7 @@
     <Compile Include="..\ai-console-agent\Game\DaySimChillZone.cs" Link="Game\DaySimChillZone.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimGoals.cs" Link="Game\DaySimGoals.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimTray.cs" Link="Game\DaySimTray.cs" />
+    <Compile Include="..\ai-console-agent\Game\TrayBalloon.cs" Link="Game\TrayBalloon.cs" />
     <Compile Include="..\ai-console-agent\Game\DaySimGame.cs" Link="Game\DaySimGame.cs" />
     <Compile Include="..\ai-console-agent\Game\ClickRivalCore.cs" Link="Game\ClickRivalCore.cs" />
     <Compile Include="..\ai-console-agent\Game\ClickRivalDto.cs" Link="Game\ClickRivalDto.cs" />
